@@ -1,39 +1,32 @@
 #ifndef NODO_H
 #define NODO_H
 
-template <class T> class Nodo
+class nodo
 {
 
-protected:
-    T dato = NULL;
-    Nodo<T>* siguiente = NULL;
+private:
+    int data;
+    nodo* siguiente;
 
 public:
-    Nodo(T* pData)
+    nodo(int pData)
     {
-        dato = pData;
-        siguiente = 0;
+        data = pData;
+        siguiente = NULL;
     }
 
-    Nodo(T pData, Nodo<T>* siguiente)
-    {
-        dato = pData;
-        siguiente = siguiente;
-    }
-
-    void setSiguiente(Nodo<T>* pSiguiente)
-    {
+    void setSiguiente(nodo* pSiguiente){
         siguiente = pSiguiente;
     }
 
-    T* getDato() const
-    {
-        return dato;
-    }
-
-    Nodo<T>*& getSiguiente()const
+    nodo* getSiguiente()
     {
         return siguiente;
+    }
+
+    int getData()
+    {
+        return data;
     }
 };
 
