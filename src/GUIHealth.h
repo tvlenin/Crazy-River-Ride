@@ -3,10 +3,10 @@
 
 #include <QGraphicsTextItem>
 // Calse de la vida, es una GraphicsTextItem en el cua para ver las vidas que le quedan a la nave
-class Health: public QGraphicsTextItem{
+class GUIHealth: public QGraphicsTextItem{
 public:
 
-    Health(QGraphicsItem * parent=0);
+    GUIHealth(QGraphicsItem * parent=0);
     void decrease();// metodo para bajar las vidas
     int getHealth();// metodo para obtener las vidas
 private:

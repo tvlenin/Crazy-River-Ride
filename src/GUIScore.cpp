@@ -1,8 +1,8 @@
 
-#include "Score.h"
+#include "GUIScore.h"
 #include <QFont>
 
-Score::Score(QGraphicsItem *parent): QGraphicsTextItem(parent){
+GUIScore::GUIScore(QGraphicsItem *parent): QGraphicsTextItem(parent){
     // initialize the score to 0
     score = 0;
 
@@ -12,11 +12,11 @@ Score::Score(QGraphicsItem *parent): QGraphicsTextItem(parent){
     setFont(QFont("times",16));
 }
 
-void Score::increase(){
+void GUIScore::increase(){
     score++;
     setPlainText(QString("Score: ") + QString::number(score)); // Score: 1
 }
 
-int Score::getScore(){
+int GUIScore::getScore(){
     return score;
 }

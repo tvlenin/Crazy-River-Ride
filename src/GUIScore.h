@@ -3,9 +3,9 @@
 
 #include <QGraphicsTextItem>
 
-class Score: public QGraphicsTextItem{
+class GUIScore: public QGraphicsTextItem{
 public:
-    Score(QGraphicsItem * parent=0);
+    GUIScore(QGraphicsItem * parent=0);
     void increase();
     int getScore();
 private:

@@ -1,5 +1,6 @@
 #include <QApplication>
-#include "Game.h"
+#include "UI.h"
+#include "GameLogic.h"
 
 /*
 Tutorial Topics:
@@ -7,13 +8,14 @@ Tutorial Topics:
 -QGraphicsTextItem, setPlainText(), setFont(),setDefaultTextColor()
 */
 
-Game * game;
-
 int main(int argc, char *argv[]){
+
+
     QApplication a(argc, argv);
 
-    game = new Game();
-    game->show();
+    GameLogic* logica = new GameLogic();
+    UI* ui = new UI();
+
 
     return a.exec();
 }

@@ -6,10 +6,10 @@
 #include <QGraphicsItem>
 #include <QMediaPlayer>
 // Clase player del tipo QGraphicsPixmapItem, una imagen
-class Player:public QObject, public QGraphicsPixmapItem{
+class GUIPlayer:public QObject, public QGraphicsPixmapItem{
     Q_OBJECT
 public:
-    Player(QGraphicsItem * parent=0);
+    GUIPlayer(QGraphicsItem * parent=0);
     void keyPressEvent(QKeyEvent * event);
 public slots:
     void spawn();
