@@ -10,7 +10,7 @@ Tutorial Topics:
 
 int main(int argc, char *argv[]){
 
-
+    //Ok new comment
     QApplication a(argc, argv);
 
     GameLogic* logica = new GameLogic();
