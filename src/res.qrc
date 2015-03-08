@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>../disparo.mp3</file>
+        <file>../musica.mp3</file>
+        <file>../disparo.wav</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>../bg.png</file>
+        <file>../bullet.png</file>
+        <file>../enemy.png</file>
+        <file>../nave.png</file>
+    </qresource>
+</RCC>
